@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "exactOptionalPropertyTypes": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["ES2022"],
+    "module": "ES2022",
+    "moduleResolution": "NodeNext",
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ES2022",
+    "verbatimModuleSyntax": true
+  },
+  "include": ["src", "tests"],
+  "ts-node": {
+    "esm": true,
+    "files": true,
+    "transpileOnly": true
+  }
+}
