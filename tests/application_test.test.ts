@@ -60,6 +60,14 @@ describe("processAndTransform", () => {
     ).rejects.toThrowErrorMatchingInlineSnapshot('"not allowed valid"');
   });
 
+  test("processAndTransform boolean", async () => {
+    const inputData = [{ id: false }];
+
+    await expect(() =>
+      processAndTransform(inputData)
+    ).rejects.toThrowErrorMatchingInlineSnapshot('"Boolean not accepted"');
+  });
+
   test("processAndTransform object", async () => {
     class Base {
       propertyName: string;
